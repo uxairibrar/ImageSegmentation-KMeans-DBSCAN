@@ -1,10 +1,3 @@
-# Foundations of Data Mining - Practical Task 1
-# Version 2.0 (2023-11-02)
-###############################################
-# Template for a custom clustering library.
-# Classes are partially compatible to scikit-learn.
-# Aside from check_array, do not import functions from scikit-learn, tensorflow, keras or related libraries!
-# Do not change the signatures of the given functions or the class names!
 
 import numpy as np
 from sklearn.utils import check_array
@@ -26,11 +19,9 @@ class CustomKMeans:
 
     def fit(self, X: np.ndarray, y=None):
         """
-        This is the main clustering method of the CustomKMeans class, which means that this is one of the methods you
-        will have to complete/implement. The method performs the clustering on vectors given in X. It is important that
+        This is the main clustering method of the CustomKMeans class and it  performs the clustering on vectors given in X. It is important that
         this method saves the centroids in "self.cluster_centers_" and the labels (=mapping of vectors to clusters) in
-        the "self.labels_" attribute! As long as it does this, you may change the content of this method completely
-        and/or encapsulate the necessary mechanisms in additional functions.
+        the "self.labels_" attribute! 
         :param X: Array that contains the input feature vectors
         :param y: Unused
         :return: Returns the clustering object itself.
@@ -101,8 +92,7 @@ class CustomDBSCAN:
      
     def fit(self, X: np.ndarray, y=None):
         """
-        This is the main clustering method of the CustomDBSCAN class, which means that this is one of the methods you
-        will have to complete/implement. The method performs the clustering on vectors given in X. It is important that
+        This is the main clustering method of the CustomDBSCAN class and it performs the clustering on vectors given in X. It is important that
         this method saves the determined labels (=mapping of vectors to clusters) in the "self.labels_" attribute! As
         long as it does this, you may change the content of this method completely and/or encapsulate the necessary
         mechanisms in additional functions.
